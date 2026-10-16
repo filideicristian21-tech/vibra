@@ -1,6 +1,6 @@
 # Crediti VIBRA
 
-294 video da Wikimedia Commons. Licenza di ogni file verificata con l'API di Commons il 16/10/2026: solo CC0, pubblico dominio, CC BY e CC BY-SA.
+293 video da Wikimedia Commons. Licenza di ogni file verificata con l'API di Commons il 16/10/2026: solo CC0, pubblico dominio, CC BY e CC BY-SA.
 
 **Modifiche (tagliato da VIBRA):** ogni clip è stata tagliata a max 9 s, ritagliata in verticale 540×960, ricompressa in H.264 e privata dell'audio. Le clip derivate da opere CC BY-SA sono distribuite sotto la stessa licenza CC BY-SA; le clip CC BY mantengono l'attribuzione. Nessun DRM; le didascalie non sono impresse nel video.
 Le persone eventualmente visibili sono scene di repertorio, non i personaggi IA. Registro di revisione: `review.csv` (filtro automatico + revisione visiva di ogni clip su 3 frame: inizio, metà, fine).
@@ -21,7 +21,6 @@ Le persone eventualmente visibili sono scene di repertorio, non i personaggi IA.
 | v/v19.mp4 | Blowing Snow in Milton, Florida.webm | Jesselikeswx | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) | https://commons.wikimedia.org/wiki/File:Blowing_Snow_in_Milton,_Florida.webm | tagliato da VIBRA |
 | v/v20.mp4 | Aquário com plantas aquáticas.webm | Lucas Joahay | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | https://commons.wikimedia.org/wiki/File:Aqu%C3%A1rio_com_plantas_aqu%C3%A1ticas.webm | tagliato da VIBRA |
 | v/v21.mp4 | Canal Grande MVI 0675.webm | Deror avi | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | https://commons.wikimedia.org/wiki/File:Canal_Grande_MVI_0675.webm | tagliato da VIBRA |
-| v/v22.mp4 | Musicians on the Piotrkowska street.ogv | Ixtlilto | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | https://commons.wikimedia.org/wiki/File:Musicians_on_the_Piotrkowska_street.ogv | tagliato da VIBRA |
 | v/w001.mp4 | Side view video of Kawaida Waterfall cascading, Cianda, Kiambu County.webm | Lebu Ayiga | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) | https://commons.wikimedia.org/wiki/File:Side_view_video_of_Kawaida_Waterfall_cascading,_Cianda,_Kiambu_County.webm | tagliato da VIBRA |
 | v/w002.mp4 | Shila Waterfall in Zanaskar.webm | FAYAZ SHUJA | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | https://commons.wikimedia.org/wiki/File:Shila_Waterfall_in_Zanaskar.webm | tagliato da VIBRA |
 | v/w003.mp4 | Front view video of Kawaida Waterfall, Cianda, Kiambu County.webm | Lebu Ayiga | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) | https://commons.wikimedia.org/wiki/File:Front_view_video_of_Kawaida_Waterfall,_Cianda,_Kiambu_County.webm | tagliato da VIBRA |
