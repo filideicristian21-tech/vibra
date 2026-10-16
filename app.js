@@ -47,10 +47,10 @@ function learn(v,sec,done){v.tags.forEach(t=>S.tagw[t]=Math.min(50,(S.tagw[t]||0
 let io,curVid=null,watchStart=0;
 function railBtn(act,ico,lab,on){return`<button data-a="${act}" class="${on?'on':''}"><b>${ico}</b>${lab}</button>`}
 function clipHTML(v){const p=P[v.by];
-  return`<section class="clip" data-id="${v.id}"><video src="${v.src}" poster="${v.poster}" muted loop playsinline preload="metadata"></video><div class="shade"></div><div class="prog"></div>
+  return`<section class="clip" data-id="${v.id}"><video data-src="${v.src}" data-poster="${v.poster}" muted loop playsinline preload="none"></video><div class="shade"></div><div class="prog"></div>
   <div class="info"><div class="who" data-a="prof">@${esc(p.h)} ${IA} <span style="opacity:.7;font-weight:500">· ${esc(p.n)}</span></div>
   <div class="cap">${esc(v.cap)} ${v.tags.map(t=>`<span class="tag" data-tag="${t}">#${t}</span>`).join('')}</div>
-  <div class="snd">♪ ${esc(v.sound)} · <u data-a="credit">licenza ${esc(v.credit.lic)}</u></div></div>
+  <div class="snd" data-a="credit">🎥 ${esc(v.credit.author.slice(0,40))} · ${esc(v.credit.lic)} · Wikimedia Commons · tagliato da VIBRA</div></div>
   <div class="rail"><button data-a="prof">${av(p)}</button>
   ${railBtn('like','♥',S.likes[v.id]?'Ti piace':'Mi piace',S.likes[v.id])}
   ${railBtn('com','💬','Commenta')}${railBtn('save','🔖',S.saves[v.id]?'Salvato':'Salva',S.saves[v.id])}${railBtn('share','↗','Condividi')}${railBtn('more','⋯','Altro')}</div></section>`}
@@ -63,17 +63,20 @@ function renderHome(){
   const feed=$('#feed');io&&io.disconnect();
   io=new IntersectionObserver(es=>es.forEach(e=>{const vd=e.target.querySelector('video');if(!vd)return;
     if(e.isIntersecting&&e.intersectionRatio>.6){activate(e.target,vd)}else{if(!vd.paused){vd.pause();endWatch(e.target,vd)}}}),{root:feed,threshold:[0,.6,1]});
-  feed.querySelectorAll('.clip').forEach(c=>io.observe(c));
+  feed.querySelectorAll('.clip').forEach(c=>io.observe(c));const f0=feed.querySelector('.clip');if(f0)windowAround(f0);
   feed.onclick=onFeedClick;feed.ondblclick=e=>{const c=e.target.closest('.clip');if(c&&c.dataset.id&&!e.target.closest('.rail,.info')){doLike(c,true);heart(c)}};
 }
-function activate(c,vd){vd.muted=!sound;vd.play().catch(()=>{});curVid=c.dataset.id;watchStart=Date.now();S.lastCreator=V[curVid].by;
+function loadClip(c,pre){const vd=c&&c.querySelector('video');if(!vd||vd.getAttribute('src'))return;vd.poster=vd.dataset.poster;vd.preload=pre||'auto';vd.src=vd.dataset.src}
+function unloadClip(c){const vd=c&&c.querySelector('video');if(!vd||!vd.getAttribute('src'))return;vd.pause();vd.removeAttribute('src');vd.load()}
+function windowAround(c){const all=[...c.parentNode.children],i=all.indexOf(c);all.forEach((x,j)=>{if(j>=i-1&&j<=i+2)loadClip(x,j===i?'auto':'auto');else if(Math.abs(j-i)>4)unloadClip(x)})}
+function activate(c,vd){windowAround(c);vd.muted=!sound;vd.play().catch(()=>{});curVid=c.dataset.id;watchStart=Date.now();S.lastCreator=V[curVid].by;
   const pr=c.querySelector('.prog');vd.ontimeupdate=()=>{pr.style.width=(vd.currentTime/(vd.duration||1)*100)+'%'}}
 function endWatch(c,vd){const v=V[c.dataset.id];if(!v)return;const sec=(Date.now()-watchStart)/1000;learn(v,Math.min(sec,20),sec>(vd.duration||9)*.9)}
 let tapT=0;
 function onFeedClick(e){const c=e.target.closest('.clip');if(!c||!c.dataset.id)return;const v=V[c.dataset.id];
   const tg=e.target.closest('[data-tag]');if(tg){openTag(tg.dataset.tag);return}
   const b=e.target.closest('[data-a]');
-  if(!b){const vd=c.querySelector('video');clearTimeout(tapT);tapT=setTimeout(()=>{if(!sound){setSound(true);c.insertAdjacentHTML('beforeend','<div class="tapsnd">🔊 Audio attivo</div>')}else if(vd.paused)vd.play();else vd.pause()},230);return}
+  if(!b){const vd=c.querySelector('video');clearTimeout(tapT);tapT=setTimeout(()=>{if(vd.paused)vd.play();else vd.pause()},230);return}
   const a=b.dataset.a;
   if(a==='prof')openProfile(v.by);if(a==='like')doLike(c);if(a==='com')openComments(v);if(a==='save'){S.saves[v.id]=!S.saves[v.id];if(!S.saves[v.id])delete S.saves[v.id];save();b.classList.toggle('on');b.lastChild.textContent=S.saves[v.id]?'Salvato':'Salva';toast(S.saves[v.id]?'Salvato per dopo':'Rimosso dai salvati')}
   if(a==='share')share(v);if(a==='more')openMore(v);if(a==='credit')openCredits();
@@ -108,7 +111,7 @@ function openMore(v){const p=P[v.by];
 }
 function openReport(done){const m=modal(`<h2>Segnala</h2><p>Perché lo segnali?</p><div class="chips">${['Contenuto offensivo','Spam','Violenza o pericolo','Sembra una persona reale','Altro'].map(x=>`<button class="chip">${x}</button>`).join('')}</div><p class="note">La segnalazione resta su questo dispositivo: l'app non ha server. Il contenuto viene nascosto subito.</p><button class="btn alt w" id="mX">Annulla</button>`);
   m.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{done();m.querySelector('.box').innerHTML=`<h2>Grazie.</h2><p>Questo contenuto non verrà più mostrato.</p><button class="btn w" id="mX">Ok</button>`;$('#mX').onclick=closeModal});$('#mX').onclick=closeModal}
-function showCredit(v){const c=v.credit;modal(`<h2>Fonte del video</h2><p><b>${esc(c.title)}</b></p><p>Autore: ${esc(c.author)}</p><p>Licenza: ${c.licurl?`<a href="${c.licurl}" target="_blank" rel="noopener">${esc(c.lic)}</a>`:esc(c.lic)}</p><p><a href="${c.page}" target="_blank" rel="noopener">Pagina su Wikimedia Commons</a></p><p class="note">Video tagliato, ritagliato in verticale e ricompresso. Le persone eventualmente visibili sono scene di repertorio, non i personaggi IA.</p><button class="btn w" id="mX">Chiudi</button>`);$('#mX').onclick=closeModal}
+function showCredit(v){const c=v.credit;modal(`<h2>Fonte del video</h2><p><b>${esc(c.title)}</b></p><p>Autore: ${esc(c.author)}</p><p>Licenza: ${c.licurl?`<a href="${c.licurl}" target="_blank" rel="noopener">${esc(c.lic)}</a>`:esc(c.lic)}</p><p><a href="${c.page}" target="_blank" rel="noopener">Pagina su Wikimedia Commons</a></p><p class="note"><b>Tagliato da VIBRA:</b> clip accorciata, ritagliata in verticale, ricompressa e senza audio. Le clip da opere CC BY-SA restano sotto CC BY-SA. Le persone eventualmente visibili sono scene di repertorio, non i personaggi IA.</p><button class="btn w" id="mX">Chiudi</button>`);$('#mX').onclick=closeModal}
 function rerender(){go(tab,true)}
 // ---------- profilo persona ----------
 function openProfile(h){const p=P[h];tab='prof';stopVideos();$('#top').classList.add('hide');
@@ -119,7 +122,7 @@ function openProfile(h){const p=P[h];tab='prof';stopVideos();$('#top').classList
   <p class="bio"><span class="fixed">Profilo generato con intelligenza artificiale.</span><br>${esc(p.bio)}</p>
   <div style="display:flex;gap:8px;justify-content:center;margin-top:14px">${S.blocked[h]?`<button class="btn" id="unb">Sblocca</button>`:`<button class="btn ${S.follow[h]?'alt':''}" id="fol">${S.follow[h]?'Segui già ✓':'Segui'}</button><button class="btn alt" id="dm">Messaggio</button><button class="btn alt" id="pm">⋯</button>`}</div>
   <p class="note" style="margin-top:10px">I numeri sono solo le tue azioni su questo telefono: niente contatori finti.</p></div>
-  <div class="grid">${S.blocked[h]?'':vids.map(v=>`<div class="cell" data-v="${v.id}" style="background-image:url(${v.poster})"><span>▶ ${S.likes[v.id]?'💚':''}</span></div>`).join('')}</div></div>`;
+  <div class="grid">${S.blocked[h]?'':vids.map(v=>`<div class="cell" data-v="${v.id}" ><img loading="lazy" decoding="async" src="${v.poster}" alt=""><span>▶ ${S.likes[v.id]?'💚':''}</span></div>`).join('')}</div></div>`;
   $('#back').onclick=()=>go('home');
   const f=$('#fol');if(f)f.onclick=()=>{S.follow[h]=!S.follow[h];if(!S.follow[h])delete S.follow[h];save();toast(S.follow[h]?`Fatto! I nuovi video di @${h} li trovi nei Seguiti.`:'Non segui più');openProfile(h)};
   const u=$('#unb');if(u)u.onclick=()=>{delete S.blocked[h];save();openProfile(h)};
@@ -128,7 +131,7 @@ function openProfile(h){const p=P[h];tab='prof';stopVideos();$('#top').classList
   view.querySelector('.grid').onclick=e=>{const c=e.target.closest('[data-v]');if(c)playSingle(V[c.dataset.v])};
 }
 function playSingle(v){stopVideos();$('#top').classList.add('hide');view.innerHTML=`<div class="feed" id="feed">${clipHTML(v)}</div><button class="btn alt" id="back" style="position:absolute;top:calc(12px + env(safe-area-inset-top));left:12px;z-index:5">←</button>`;
-  const c=view.querySelector('.clip'),vd=c.querySelector('video');activate(c,vd);$('#feed').onclick=onFeedClick;$('#back').onclick=()=>openProfile(v.by)}
+  const c=view.querySelector('.clip');loadClip(c);const vd=c.querySelector('video');activate(c,vd);$('#feed').onclick=onFeedClick;$('#back').onclick=()=>openProfile(v.by)}
 // ---------- scopri / tendenze / ricerca ----------
 function tagCounts(){const m={};D.videos.forEach(v=>{if(!S.hidden[v.id]&&!S.blocked[v.by])v.tags.forEach(t=>m[t]=(m[t]||0)+1)});return Object.entries(m).sort((a,b)=>b[1]-a[1])}
 function renderScopri(q){$('#top').classList.add('hide');
@@ -140,13 +143,13 @@ function renderScopri(q){$('#top').classList.add('hide');
     const vs=D.videos.filter(v=>!S.hidden[v.id]&&!S.blocked[v.by]&&(v.cap+v.tags.join(' ')).toLowerCase().includes(s));
     const ts=tagCounts().filter(([t])=>t.includes(s));
     r.innerHTML=(!ps.length&&!vs.length&&!ts.length)?`<div class="empty">Nessun risultato per «${esc(s)}». Prova con un'altra parola o guarda cosa va di moda.<br><br><button class="btn" id="clr">Tendenze</button></div>`:
-      `${ts.length?`<h3>Hashtag</h3><div class="chips">${ts.map(([t])=>`<button class="chip" data-tag="${t}">#${t}</button>`).join('')}</div>`:''}${ps.length?`<h3>Creator</h3>${ps.map(p=>`<div class="row" data-h="${p.h}">${av(p)}<div class="grow"><b>${esc(p.n)}</b> ${IA}<small>@${p.h}</small></div></div>`).join('')}`:''}${vs.length?`<h3>Video</h3><div class="grid">${vs.map(v=>`<div class="cell" data-v="${v.id}" style="background-image:url(${v.poster})"><span>@${v.by}</span></div>`).join('')}</div>`:''}`;
+      `${ts.length?`<h3>Hashtag</h3><div class="chips">${ts.map(([t])=>`<button class="chip" data-tag="${t}">#${t}</button>`).join('')}</div>`:''}${ps.length?`<h3>Creator</h3>${ps.map(p=>`<div class="row" data-h="${p.h}">${av(p)}<div class="grow"><b>${esc(p.n)}</b> ${IA}<small>@${p.h}</small></div></div>`).join('')}`:''}${vs.length?`<h3>Video</h3><div class="grid">${vs.map(v=>`<div class="cell" data-v="${v.id}" ><img loading="lazy" decoding="async" src="${v.poster}" alt=""><span>@${v.by}</span></div>`).join('')}</div>`:''}`;
     const c=$('#clr');if(c)c.onclick=()=>{$('#q').value='';draw()}};
   $('#q').oninput=draw;draw();
   $('#res').onclick=e=>{const t=e.target.closest('[data-tag]'),h=e.target.closest('[data-h]'),v=e.target.closest('[data-v]');if(t)openTag(t.dataset.tag);else if(h)openProfile(h.dataset.h);else if(v)playSingle(V[v.dataset.v])};
 }
 function openTag(t){tab='tag';stopVideos();$('#top').classList.add('hide');const vs=D.videos.filter(v=>v.tags.includes(t)&&!S.hidden[v.id]&&!S.blocked[v.by]);
-  view.innerHTML=`<div class="page"><button class="btn alt" id="back">← Scopri</button><h1 class="pt" style="margin-top:12px;color:var(--li)">#${esc(t)}</h1><p class="note">${vs.length} video nella demo</p><div class="grid">${vs.map(v=>`<div class="cell" data-v="${v.id}" style="background-image:url(${v.poster})"><span>@${v.by}</span></div>`).join('')}</div></div>`;
+  view.innerHTML=`<div class="page"><button class="btn alt" id="back">← Scopri</button><h1 class="pt" style="margin-top:12px;color:var(--li)">#${esc(t)}</h1><p class="note">${vs.length} video nella demo</p><div class="grid">${vs.map(v=>`<div class="cell" data-v="${v.id}" ><img loading="lazy" decoding="async" src="${v.poster}" alt=""><span>@${v.by}</span></div>`).join('')}</div></div>`;
   $('#back').onclick=()=>go('scopri');view.querySelector('.grid').onclick=e=>{const c=e.target.closest('[data-v]');if(c)playSingle(V[c.dataset.v])}}
 // ---------- DM ----------
 const R={
@@ -208,7 +211,7 @@ function stripImage(f){return new Promise(res=>{const u=URL.createObjectURL(f),i
 let meTab='miei';
 async function renderMe(){$('#top').classList.add('hide');const ups=(await dbAll()).sort((a,b)=>b.at-a.at);if(tab!=='me')return;
   const liked=D.videos.filter(v=>S.likes[v.id]),saved=D.videos.filter(v=>S.saves[v.id]);
-  const urls=[];const grid=meTab==='miei'?(ups.length?ups.map(u=>{const x=URL.createObjectURL(u.blob);urls.push(x);return u.type==='img'?`<div class="cell" data-u="${u.id}" style="background-image:url(${x})"></div>`:`<div class="cell" data-u="${u.id}"><video src="${x}" muted playsinline style="width:100%;height:100%;object-fit:cover;border-radius:6px"></video><span>▶</span></div>`}).join(''):''):(meTab==='like'?liked:saved).map(v=>`<div class="cell" data-v="${v.id}" style="background-image:url(${v.poster})"><span>@${v.by}</span></div>`).join('');
+  const urls=[];const grid=meTab==='miei'?(ups.length?ups.map(u=>{const x=URL.createObjectURL(u.blob);urls.push(x);return u.type==='img'?`<div class="cell" data-u="${u.id}" style="background-image:url(${x})"></div>`:`<div class="cell" data-u="${u.id}"><video src="${x}" muted playsinline style="width:100%;height:100%;object-fit:cover;border-radius:6px"></video><span>▶</span></div>`}).join(''):''):(meTab==='like'?liked:saved).map(v=>`<div class="cell" data-v="${v.id}" ><img loading="lazy" decoding="async" src="${v.poster}" alt=""><span>@${v.by}</span></div>`).join('');
   view.innerHTML=`<div class="page"><div class="prof">${meAv(1)}<h2>${esc(S.name||'Il tuo profilo')}</h2><p class="bio">${esc(S.bio||'Aggiungi una bio. Resta solo sul tuo telefono.')}</p>
   <div class="stats"><div><b>${Object.keys(S.follow).length}</b>seguiti</div><div><b>${ups.length}</b>tuoi video</div><div><b>${liked.length}</b>like dati</div></div>
   <button class="btn alt" id="edit">Modifica profilo</button> <button class="btn alt" id="set">⚙ Impostazioni</button></div>
@@ -239,11 +242,11 @@ function openPrivacy(){staticPage(`<h2>Privacy (versione breve)</h2><p><b>Ultimo
   <p><b>Cancellare i dati.</b> Usa «Cancella tutti i miei dati» nelle Impostazioni oppure cancella i dati del sito dal browser. Una volta cancellati non si possono recuperare.</p>
   <p><b>Età.</b> L'app è riservata a chi ha almeno 14 anni.</p><p><b>Domande.</b> Scrivi a [EMAIL CONTATTO PRIVACY]. Hai anche il diritto di presentare reclamo al Garante per la protezione dei dati personali.</p>`)}
 function openFaq(){staticPage(`<h2>Domande frequenti</h2><p><b>Le persone che vedo sono vere?</b><br>No. Tutti i profili con l'etichetta «IA» sono personas create con l'intelligenza artificiale. Al momento non ci sono altri utenti reali nell'app.</p><p><b>Le personas IA possono dire cose sbagliate?</b><br>Sì. Le loro risposte sono automatiche e possono essere strane o sbagliate. Non prenderle come consigli affidabili.</p><p><b>Chi c'è nei video?</b><br>Sono video con licenza libera da Wikimedia Commons: le persone che si vedono sono scene di repertorio, non i personaggi IA.</p><p><b>Qualcuno vede i miei post?</b><br>No. Quello che carichi o scrivi resta sul tuo dispositivo e lo vedi solo tu.</p><p><b>Ho cambiato telefono / cancellato il browser e ho perso tutto. Si recupera?</b><br>No. Senza account non c'è una copia online.</p><p><b>Costa qualcosa?</b><br>No, l'app è gratis.</p><p><b>Posso cancellare tutto?</b><br>Sì: Profilo → Impostazioni → «Cancella tutti i miei dati».</p>`)}
-function openCredits(){staticPage(`<h2>Crediti e licenze</h2><p class="note">Tutti i video vengono da Wikimedia Commons con licenza libera (CC0, pubblico dominio, CC BY, CC BY-SA), verificata il 16/10/2026. Sono stati tagliati, ritagliati in verticale e ricompressi; le versioni modificate dei video CC BY-SA sono condivise con la stessa licenza.</p>
-  ${D.videos.map(v=>{const c=v.credit;return`<div class="row"><img src="${v.poster}" style="width:40px;height:70px;object-fit:cover;border-radius:6px"><div class="grow" style="font-size:13px"><b>${esc(c.title)}</b><br>${esc(c.author)} · ${c.licurl?`<a href="${c.licurl}" target="_blank" rel="noopener">${esc(c.lic)}</a>`:esc(c.lic)} · <a href="${c.page}" target="_blank" rel="noopener">fonte</a></div></div>`}).join('')}
+function openCredits(){staticPage(`<h2>Crediti e licenze</h2><p class="note">Tutti i video vengono da Wikimedia Commons con licenza libera (CC0, pubblico dominio, CC BY, CC BY-SA), verificata il 16/10/2026. Ogni clip è «tagliata da VIBRA»: accorciata, ritagliata in verticale, ricompressa e senza audio. Le clip derivate da opere CC BY-SA sono condivise con la stessa licenza; nessun DRM. Elenco completo anche in CREDITS.md e videos.json nel repository.</p>
+  ${D.videos.map(v=>{const c=v.credit;return`<div class="row"><img loading="lazy" src="${v.poster}" style="width:40px;height:70px;object-fit:cover;border-radius:6px"><div class="grow" style="font-size:13px"><b>${esc(c.title)}</b><br>${esc(c.author)} · ${c.licurl?`<a href="${c.licurl}" target="_blank" rel="noopener">${esc(c.lic)}</a>`:esc(c.lic)} · <a href="${c.page}" target="_blank" rel="noopener">fonte</a> · tagliato da VIBRA</div></div>`}).join('')}
   <p class="note" style="margin-top:12px">Personaggi, testi, codice e logo: originali di VIBRA. Emoji: quelle del tuo dispositivo.</p>`)}
 // ---------- onboarding ----------
-const TOPICS=['cucina','viaggi','animali','musica','ballo','tech','scienza','comicita','benessere','sport','arte','caffe'];
+const TOPICS=['natura','animali','spazio','timelapse','satisfying','slowmotion','sport','cibo','città','drone','viaggi','musica','tech','scienza','benessere'];
 function onboarding(step=0){
   if(step===0){modal(`<div style="font-size:44px">✨</div><h2>Benvenuto su VIBRA!</h2><p style="color:var(--li);font-weight:700">Guarda. Scorri. Vibra.</p>
    <p><b>Questa è una demo. Tutti i profili sono personaggi generati con l'IA e le risposte nei messaggi sono automatiche.</b> Ognuno ha l'etichetta ${IA} accanto al nome. Non sono persone reali e possono sbagliare.</p>
@@ -264,7 +267,7 @@ function go(t,force){if(t==='privacy')return openPrivacy();if(t==='faq')return o
 function setFeed(f){feedMode=f;document.querySelectorAll('.feedtabs button').forEach(b=>b.classList.toggle('on',b.dataset.f===f));go('home')}
 $('#nav').onclick=e=>{const b=e.target.closest('[data-t]');if(b)go(b.dataset.t)};
 document.querySelectorAll('.feedtabs button').forEach(b=>b.onclick=()=>setFeed(b.dataset.f));
-$('#sndBtn').onclick=()=>setSound(!sound);
+
 document.addEventListener('click',e=>{const g=e.target.closest('[data-goto]');if(g){e.stopPropagation();go(g.dataset.goto)}},true);
 document.addEventListener('visibilitychange',()=>{if(document.hidden)document.querySelectorAll('video').forEach(v=>v.pause())});
 window.addEventListener('offline',()=>toast('Sei offline. I video già visti riprendono da qui.'));

@@ -1,7 +1,14 @@
-const VID=["v/v00.mp4", "v/v01.mp4", "v/v02.mp4", "v/v04.mp4", "v/v05.mp4", "v/v06.mp4", "v/v07.mp4", "v/v08.mp4", "v/v09.mp4", "v/v10.mp4", "v/v11.mp4", "v/v12.mp4", "v/v13.mp4", "v/v14.mp4", "v/v15.mp4", "v/v16.mp4", "v/v17.mp4", "v/v18.jpg", "v/v18.mp4", "v/v19.jpg", "v/v19.mp4", "v/v20.jpg", "v/v20.mp4", "v/v21.jpg", "v/v21.mp4", "v/v22.jpg", "v/v22.mp4"];const C='vibra-v1',CORE=['./','index.html','style.css','app.js','data.js','manifest.webmanifest','icon.svg','icon-192.png','icon-512.png'];
-self.addEventListener('install',e=>{e.waitUntil(caches.open(C).then(c=>c.addAll(CORE)).then(()=>{caches.open(C).then(c=>c.addAll(VID)).catch(()=>{});return self.skipWaiting()}))});
-self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==C).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
+const C='vibra-core-v2',M='vibra-media-v2',MAX=80,CORE=['./','index.html','style.css','app.js','data.js','manifest.webmanifest','icon.svg','icon-192.png','icon-512.png'];
+self.addEventListener('install',e=>{e.waitUntil(caches.open(C).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting()))});
+self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==C&&k!==M).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
+async function trim(){const c=await caches.open(M),ks=await c.keys();for(let i=0;i<ks.length-MAX;i++)await c.delete(ks[i])}
+async function media(req,url){const c=await caches.open(M);let r=await c.match(url);
+  if(r){await c.delete(url);await c.put(url,r.clone())}// LRU: sposta in coda
+  else{try{r=await fetch(url);if(r.ok&&r.status===200){await c.put(url,r.clone());trim()}}catch(e){return new Response('',{status:504})}}
+  const rg=req.headers.get('range');if(!rg||!r.ok)return r;
+  const b=await r.blob(),m=/bytes=(\d+)-(\d*)/.exec(rg),st=+m[1],en=m[2]?Math.min(+m[2],b.size-1):b.size-1;
+  return new Response(b.slice(st,en+1),{status:206,headers:{'Content-Type':r.headers.get('Content-Type')||'video/mp4','Content-Range':`bytes ${st}-${en}/${b.size}`,'Content-Length':String(en-st+1),'Accept-Ranges':'bytes'}})}
 self.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(u.origin!==location.origin||e.request.method!=='GET')return;
-  const rg=e.request.headers.get('range');
-  if(rg){e.respondWith(caches.match(u.origin+u.pathname).then(async r=>{if(!r)return fetch(e.request);const b=await r.blob();const m=/bytes=(\d+)-(\d*)/.exec(rg);const st=+m[1],en=m[2]?+m[2]:b.size-1;return new Response(b.slice(st,en+1),{status:206,headers:{'Content-Type':'video/mp4','Content-Range':`bytes ${st}-${en}/${b.size}`,'Content-Length':String(en-st+1),'Accept-Ranges':'bytes'}})}));return}
-  e.respondWith(caches.match(e.request,{ignoreSearch:true}).then(r=>r||fetch(e.request).then(res=>{if(res.ok&&res.status===200){const cp=res.clone();caches.open(C).then(c=>c.put(e.request,cp))}return res}).catch(()=>caches.match('index.html'))))});
+  if(/\/v\/[^/]+\.mp4$/.test(u.pathname)){e.respondWith(media(e.request,u.origin+u.pathname));return}
+  if(/\/v\/[^/]+\.jpg$/.test(u.pathname)){e.respondWith(media(e.request,u.origin+u.pathname));return}
+  e.respondWith(fetch(e.request).then(res=>{if(res.ok&&res.status===200){const cp=res.clone();caches.open(C).then(c=>c.put(e.request,cp))}return res}).catch(()=>caches.match(e.request,{ignoreSearch:true}).then(r=>r||caches.match('index.html'))))});
