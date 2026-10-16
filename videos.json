@@ -1,22 +1,5 @@
 [
  {
-  "id": "v00",
-  "file": "v/v00.mp4",
-  "by": "pentola.allegra",
-  "tags": [
-   "cucina",
-   "streetfood",
-   "ricetteveloci",
-   "vibra"
-  ],
-  "title": "Cooking Boodog - 2.webm",
-  "author": "Ludovic Hirlimann",
-  "lic": "CC BY-SA 4.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Cooking_Boodog_-_2.webm",
-  "note": "tagliato da VIBRA"
- },
- {
   "id": "v01",
   "file": "v/v01.mp4",
   "by": "pentola.allegra",
@@ -101,74 +84,6 @@
   "note": "tagliato da VIBRA"
  },
  {
-  "id": "v07",
-  "file": "v/v07.mp4",
-  "by": "nota.storta",
-  "tags": [
-   "musica",
-   "ballo",
-   "chitarra",
-   "vibra"
-  ],
-  "title": "Flamenco Road Video Clip with Michael Laucke.ogv",
-  "author": "Mlaucke",
-  "lic": "CC BY-SA 4.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Flamenco_Road_Video_Clip_with_Michael_Laucke.ogv",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "v08",
-  "file": "v/v08.mp4",
-  "by": "nota.storta",
-  "tags": [
-   "ballo",
-   "musica",
-   "cultura",
-   "vibra"
-  ],
-  "title": "Baganda traditional dance 01.webm",
-  "author": "Kateregga1",
-  "lic": "CC BY-SA 4.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Baganda_traditional_dance_01.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "v09",
-  "file": "v/v09.mp4",
-  "by": "campetto.sotto.casa",
-  "tags": [
-   "sport",
-   "skate",
-   "fitness",
-   "vibra"
-  ],
-  "title": "Day of the Town (2017-09-09) - Skateboarding - 0096.webm",
-  "author": "Zelio007",
-  "lic": "CC BY-SA 4.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Day_of_the_Town_(2017-09-09)_-_Skateboarding_-_0096.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "v10",
-  "file": "v/v10.mp4",
-  "by": "perche.mai",
-  "tags": [
-   "scienza",
-   "sport",
-   "mare",
-   "vibra"
-  ],
-  "title": "Come funziona il foiling.webm",
-  "author": "Distribution Wissen SRF",
-  "lic": "CC BY-SA 4.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Come_funziona_il_foiling.webm",
-  "note": "tagliato da VIBRA"
- },
- {
   "id": "v11",
   "file": "v/v11.mp4",
   "by": "salvadanaio.furbo",
@@ -250,23 +165,6 @@
   "lic": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Braccio_robotico_con_Arduino.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "v16",
-  "file": "v/v16.mp4",
-  "by": "bit.chiaro",
-  "tags": [
-   "tech",
-   "robot",
-   "scienza",
-   "vibra"
-  ],
-  "title": "4n robot.webm",
-  "author": "vedi pagina",
-  "lic": "Public domain",
-  "licurl": "",
-  "page": "https://commons.wikimedia.org/wiki/File:4n_robot.webm",
   "note": "tagliato da VIBRA"
  },
  {
@@ -406,23 +304,6 @@
   "note": "tagliato da VIBRA"
  },
  {
-  "id": "w004",
-  "file": "v/w004.mp4",
-  "by": "pagina.lenta",
-  "tags": [
-   "natura",
-   "vibra",
-   "bosco",
-   "paesaggi"
-  ],
-  "title": "Karura forest video-portrait.webm",
-  "author": "Queen Asali",
-  "lic": "CC BY-SA 4.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Karura_forest_video-portrait.webm",
-  "note": "tagliato da VIBRA"
- },
- {
   "id": "w005",
   "file": "v/w005.mp4",
   "by": "zaino.lento",
@@ -471,23 +352,6 @@
   "lic": "CC BY 3.0",
   "licurl": "https://creativecommons.org/licenses/by/3.0",
   "page": "https://commons.wikimedia.org/wiki/File:Aerial_views_of_forest_in_Russia.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w008",
-  "file": "v/w008.mp4",
-  "by": "pagina.lenta",
-  "tags": [
-   "natura",
-   "vibra",
-   "oceano",
-   "paesaggi"
-  ],
-  "title": "Ocean surface waves 09.ogv",
-  "author": "Mostafameraji",
-  "lic": "CC0",
-  "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-  "page": "https://commons.wikimedia.org/wiki/File:Ocean_surface_waves_09.ogv",
   "note": "tagliato da VIBRA"
  },
  {
@@ -590,23 +454,6 @@
   "lic": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
   "page": "https://commons.wikimedia.org/wiki/File:007_Volcano_eruption_of_Litli-Hr%C3%BAtur_in_Iceland_in_2023_Video_by_Giles_Laurent.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w018",
-  "file": "v/w018.mp4",
-  "by": "pagina.lenta",
-  "tags": [
-   "natura",
-   "vibra",
-   "vulcano",
-   "paesaggi"
-  ],
-  "title": "Halemaʻumaʻu lava lake USGS multimediaFile-1585.webm",
-  "author": "United States Geological Survey",
-  "lic": "Public domain",
-  "licurl": "",
-  "page": "https://commons.wikimedia.org/wiki/File:Halema%CA%BBuma%CA%BBu_lava_lake_USGS_multimediaFile-1585.webm",
   "note": "tagliato da VIBRA"
  },
  {
@@ -1051,23 +898,6 @@
   "note": "tagliato da VIBRA"
  },
  {
-  "id": "w058",
-  "file": "v/w058.mp4",
-  "by": "pagina.lenta",
-  "tags": [
-   "natura",
-   "vibra",
-   "foresta",
-   "paesaggi"
-  ],
-  "title": "Die klimatische Funktion des Regenwaldes.webm",
-  "author": "ZDF/TerraXPress/Christiane Mayer/Anna-Lena Neidlinger",
-  "lic": "CC BY 4.0",
-  "licurl": "https://creativecommons.org/licenses/by/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Die_klimatische_Funktion_des_Regenwaldes.webm",
-  "note": "tagliato da VIBRA"
- },
- {
   "id": "w060",
   "file": "v/w060.mp4",
   "by": "respiro.lento",
@@ -1150,23 +980,6 @@
   "lic": "CC0",
   "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
   "page": "https://commons.wikimedia.org/wiki/File:30s_Time_lapse_of_Sunrise_at_the_shore_line_of_Raymer_Bay_on_Okanagan_Lake,_24fps.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w065",
-  "file": "v/w065.mp4",
-  "by": "pollice.felice",
-  "tags": [
-   "natura",
-   "vibra",
-   "alba",
-   "paesaggi"
-  ],
-  "title": "30s Time lapse of Sunrise at the shore line of Raymer Bay on Okanagan Lake.webm",
-  "author": "Extemporalist",
-  "lic": "CC0",
-  "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-  "page": "https://commons.wikimedia.org/wiki/File:30s_Time_lapse_of_Sunrise_at_the_shore_line_of_Raymer_Bay_on_Okanagan_Lake.webm",
   "note": "tagliato da VIBRA"
  },
  {
@@ -1306,23 +1119,6 @@
   "note": "tagliato da VIBRA"
  },
  {
-  "id": "w075",
-  "file": "v/w075.mp4",
-  "by": "coda.matta",
-  "tags": [
-   "animali",
-   "vibra",
-   "cani",
-   "mondoanimale"
-  ],
-  "title": "Dog contrafeeloading.ogv",
-  "author": "Jaydanp",
-  "lic": "CC BY-SA 4.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Dog_contrafeeloading.ogv",
-  "note": "tagliato da VIBRA"
- },
- {
   "id": "w076",
   "file": "v/w076.mp4",
   "by": "coda.matta",
@@ -1337,23 +1133,6 @@
   "lic": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Cat_lapping_water_off_ground_in_slow_motion.gk.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w077",
-  "file": "v/w077.mp4",
-  "by": "coda.matta",
-  "tags": [
-   "animali",
-   "vibra",
-   "gatti",
-   "mondoanimale"
-  ],
-  "title": "Black and white cat drinks from a puddle.ogv",
-  "author": "User:Mattes",
-  "lic": "Public domain",
-  "licurl": "",
-  "page": "https://commons.wikimedia.org/wiki/File:Black_and_white_cat_drinks_from_a_puddle.ogv",
   "note": "tagliato da VIBRA"
  },
  {
@@ -1476,23 +1255,6 @@
   "note": "tagliato da VIBRA"
  },
  {
-  "id": "w088",
-  "file": "v/w088.mp4",
-  "by": "pollice.felice",
-  "tags": [
-   "animali",
-   "vibra",
-   "cavalli",
-   "mondoanimale"
-  ],
-  "title": "A Brown Horse of Salem City.webm",
-  "author": "Thamizhpparithi Maari",
-  "lic": "CC BY-SA 4.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:A_Brown_Horse_of_Salem_City.webm",
-  "note": "tagliato da VIBRA"
- },
- {
   "id": "w089",
   "file": "v/w089.mp4",
   "by": "pollice.felice",
@@ -1507,23 +1269,6 @@
   "lic": "CC0",
   "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
   "page": "https://commons.wikimedia.org/wiki/File:A_grazing_horse_at_the_%C3%89comus%C3%A9e_de_la_Bintinais.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w090",
-  "file": "v/w090.mp4",
-  "by": "risata.secca",
-  "tags": [
-   "animali",
-   "vibra",
-   "cavalli",
-   "mondoanimale"
-  ],
-  "title": "Horse-carriage.webm",
-  "author": "Aimty17",
-  "lic": "CC BY-SA 4.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Horse-carriage.webm",
   "note": "tagliato da VIBRA"
  },
  {
@@ -1578,23 +1323,6 @@
   "note": "tagliato da VIBRA"
  },
  {
-  "id": "w097",
-  "file": "v/w097.mp4",
-  "by": "pollice.felice",
-  "tags": [
-   "animali",
-   "vibra",
-   "pappagalli",
-   "mondoanimale"
-  ],
-  "title": "Корелла.mpg",
-  "author": "Markyjl",
-  "lic": "CC0",
-  "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-  "page": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%BE%D1%80%D0%B5%D0%BB%D0%BB%D0%B0.mpg",
-  "note": "tagliato da VIBRA"
- },
- {
   "id": "w098",
   "file": "v/w098.mp4",
   "by": "coda.matta",
@@ -1609,23 +1337,6 @@
   "lic": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Vernal_hangigng_parrot_feeding.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w099",
-  "file": "v/w099.mp4",
-  "by": "pollice.felice",
-  "tags": [
-   "animali",
-   "vibra",
-   "pappagalli",
-   "mondoanimale"
-  ],
-  "title": "King Parrot Feeding.ogv",
-  "author": "Stephen Gard",
-  "lic": "CC BY-SA 3.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:King_Parrot_Feeding.ogv",
   "note": "tagliato da VIBRA"
  },
  {
@@ -1660,23 +1371,6 @@
   "lic": "CC0",
   "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
   "page": "https://commons.wikimedia.org/wiki/File:2025-09-20-vdk-skt-owls-135358.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w103",
-  "file": "v/w103.mp4",
-  "by": "coda.matta",
-  "tags": [
-   "animali",
-   "vibra",
-   "gufi",
-   "mondoanimale"
-  ],
-  "title": "Veo 3 demo Owl and Badger.webm",
-  "author": "Google DeepMind",
-  "lic": "Public domain",
-  "licurl": "",
-  "page": "https://commons.wikimedia.org/wiki/File:Veo_3_demo_Owl_and_Badger.webm",
   "note": "tagliato da VIBRA"
  },
  {
@@ -1935,23 +1629,6 @@
   "note": "tagliato da VIBRA"
  },
  {
-  "id": "w122",
-  "file": "v/w122.mp4",
-  "by": "pollice.felice",
-  "tags": [
-   "animali",
-   "vibra",
-   "delfini",
-   "mondoanimale"
-  ],
-  "title": "Dolphin Underwater.webm",
-  "author": "It is a wonderful world",
-  "lic": "CC BY-SA 4.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Dolphin_Underwater.webm",
-  "note": "tagliato da VIBRA"
- },
- {
   "id": "w123",
   "file": "v/w123.mp4",
   "by": "coda.matta",
@@ -2000,23 +1677,6 @@
   "lic": "CC BY 3.0",
   "licurl": "https://creativecommons.org/licenses/by/3.0",
   "page": "https://commons.wikimedia.org/wiki/File:Humpback_whale_Tail_Sailing_behaviour.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w130",
-  "file": "v/w130.mp4",
-  "by": "risata.secca",
-  "tags": [
-   "animali",
-   "vibra",
-   "meduse",
-   "mondoanimale"
-  ],
-  "title": "Phantom Jellyfish Off of the Melchior Islands.webm",
-  "author": "MasterfulNerd",
-  "lic": "CC BY 4.0",
-  "licurl": "https://creativecommons.org/licenses/by/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Phantom_Jellyfish_Off_of_the_Melchior_Islands.webm",
   "note": "tagliato da VIBRA"
  },
  {
@@ -2085,23 +1745,6 @@
   "lic": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
   "page": "https://commons.wikimedia.org/wiki/File:OctopusFeedingCSS.ogg",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w137",
-  "file": "v/w137.mp4",
-  "by": "coda.matta",
-  "tags": [
-   "animali",
-   "vibra",
-   "farfalle",
-   "mondoanimale"
-  ],
-  "title": "Unidentified butterfly 20190609 175808 release.webm",
-  "author": "Tobias \"ToBeFree\" Frei",
-  "lic": "CC BY-SA 4.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Unidentified_butterfly_20190609_175808_release.webm",
   "note": "tagliato da VIBRA"
  },
  {
@@ -2190,23 +1833,6 @@
   "note": "tagliato da VIBRA"
  },
  {
-  "id": "w145",
-  "file": "v/w145.mp4",
-  "by": "pollice.felice",
-  "tags": [
-   "animali",
-   "vibra",
-   "rane",
-   "mondoanimale"
-  ],
-  "title": "Quadrupedal-walking-frog-footage.webm",
-  "author": "Reynaga et al;",
-  "lic": "CC BY 4.0",
-  "licurl": "https://creativecommons.org/licenses/by/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Quadrupedal-walking-frog-footage.webm",
-  "note": "tagliato da VIBRA"
- },
- {
   "id": "w146",
   "file": "v/w146.mp4",
   "by": "risata.secca",
@@ -2255,23 +1881,6 @@
   "lic": "CC BY 2.0",
   "licurl": "https://creativecommons.org/licenses/by/2.0",
   "page": "https://commons.wikimedia.org/wiki/File:Green_sea_turtles_(Chelonia_mydas)_in_Hawaii.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w151",
-  "file": "v/w151.mp4",
-  "by": "pollice.felice",
-  "tags": [
-   "animali",
-   "vibra",
-   "tartarughe",
-   "mondoanimale"
-  ],
-  "title": "Green sea turtle (Chelonia mydas) returning to the sea after laying eggs at Lady Musgrave Island, Queensland, Australia.webm",
-  "author": "Adam Fish",
-  "lic": "CC BY 3.0",
-  "licurl": "https://creativecommons.org/licenses/by/3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Green_sea_turtle_(Chelonia_mydas)_returning_to_the_sea_after_laying_eggs_at_Lady_Musgrave_Island,_Queensland,_Australia.webm",
   "note": "tagliato da VIBRA"
  },
  {
@@ -2442,23 +2051,6 @@
   "lic": "CC0",
   "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
   "page": "https://commons.wikimedia.org/wiki/File:Metskitsed_autoteel.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w164",
-  "file": "v/w164.mp4",
-  "by": "risata.secca",
-  "tags": [
-   "animali",
-   "vibra",
-   "fenicotteri",
-   "mondoanimale"
-  ],
-  "title": "Flamingo family.webm",
-  "author": "Levi Matheus",
-  "lic": "CC BY-SA 4.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Flamingo_family.webm",
   "note": "tagliato da VIBRA"
  },
  {
@@ -2870,23 +2462,6 @@
   "note": "tagliato da VIBRA"
  },
  {
-  "id": "w197",
-  "file": "v/w197.mp4",
-  "by": "pennello.ribelle",
-  "tags": [
-   "timelapse",
-   "vibra",
-   "stelle",
-   "ipnotico"
-  ],
-  "title": "Timelapse of the sky at night and in the day.webm",
-  "author": "theilr",
-  "lic": "CC BY-SA 2.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Timelapse_of_the_sky_at_night_and_in_the_day.webm",
-  "note": "tagliato da VIBRA"
- },
- {
   "id": "w198",
   "file": "v/w198.mp4",
   "by": "pennello.ribelle",
@@ -2901,23 +2476,6 @@
   "lic": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
   "page": "https://commons.wikimedia.org/wiki/File:003_Starlink_satellites_passing_over_the_Swiss_night_sky_as_seen_from_M%C3%BCrren_Video_by_Giles_Laurent.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w199",
-  "file": "v/w199.mp4",
-  "by": "pennello.ribelle",
-  "tags": [
-   "timelapse",
-   "vibra",
-   "stelle",
-   "ipnotico"
-  ],
-  "title": "Timelapse-nuit-belfort.ogv",
-  "author": "Thomas Bresson",
-  "lic": "CC BY 3.0",
-  "licurl": "https://creativecommons.org/licenses/by/3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Timelapse-nuit-belfort.ogv",
   "note": "tagliato da VIBRA"
  },
  {
@@ -2989,23 +2547,6 @@
   "note": "tagliato da VIBRA"
  },
  {
-  "id": "w209",
-  "file": "v/w209.mp4",
-  "by": "pennello.ribelle",
-  "tags": [
-   "timelapse",
-   "vibra",
-   "vialattea",
-   "ipnotico"
-  ],
-  "title": "Timelapse of Milky way changing colors during Aurora - 53921478021.webm",
-  "author": "[1]",
-  "lic": "CC BY 2.0",
-  "licurl": "https://creativecommons.org/licenses/by/2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Timelapse_of_Milky_way_changing_colors_during_Aurora_-_53921478021.webm",
-  "note": "tagliato da VIBRA"
- },
- {
   "id": "w213",
   "file": "v/w213.mp4",
   "by": "respiro.lento",
@@ -3020,23 +2561,6 @@
   "lic": "CC BY 3.0",
   "licurl": "https://creativecommons.org/licenses/by/3.0",
   "page": "https://commons.wikimedia.org/wiki/File:Timelapse_Frankfurt_Airport.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w214",
-  "file": "v/w214.mp4",
-  "by": "respiro.lento",
-  "tags": [
-   "timelapse",
-   "vibra",
-   "traffico",
-   "ipnotico"
-  ],
-  "title": "Nairobi- A Timelapse Portrait.webm",
-  "author": "xixo collective",
-  "lic": "CC BY 3.0",
-  "licurl": "https://creativecommons.org/licenses/by/3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Nairobi-_A_Timelapse_Portrait.webm",
   "note": "tagliato da VIBRA"
  },
  {
@@ -3088,23 +2612,6 @@
   "lic": "CC BY-SA 3.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
   "page": "https://commons.wikimedia.org/wiki/File:Oxalis_Triangularis_Photonasty_Timelapse_Darkening.ogv",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w218",
-  "file": "v/w218.mp4",
-  "by": "perche.mai",
-  "tags": [
-   "timelapse",
-   "vibra",
-   "piante",
-   "ipnotico"
-  ],
-  "title": "Strawberry growth (Video).webm",
-  "author": "Tomas \"Frooxius\" Mariancik",
-  "lic": "CC BY-SA 3.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Strawberry_growth_(Video).webm",
   "note": "tagliato da VIBRA"
  },
  {
@@ -3359,24 +2866,6 @@
   "note": "tagliato da VIBRA"
  },
  {
-  "id": "w239",
-  "file": "v/w239.mp4",
-  "by": "perche.mai",
-  "tags": [
-   "spazio",
-   "vibra",
-   "luna",
-   "astronomia",
-   "spazioprofondo"
-  ],
-  "title": "Lunar Gateway orbit animation moon north.webm",
-  "author": "Holger Isenberg https://areo.info",
-  "lic": "CC0",
-  "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-  "page": "https://commons.wikimedia.org/wiki/File:Lunar_Gateway_orbit_animation_moon_north.webm",
-  "note": "tagliato da VIBRA"
- },
- {
   "id": "w241",
   "file": "v/w241.mp4",
   "by": "bit.chiaro",
@@ -3557,24 +3046,6 @@
   "note": "tagliato da VIBRA"
  },
  {
-  "id": "w253",
-  "file": "v/w253.mp4",
-  "by": "perche.mai",
-  "tags": [
-   "spazio",
-   "vibra",
-   "galassie",
-   "astronomia",
-   "nasa"
-  ],
-  "title": "Horizon to full Galaxy (SVS127).webm",
-  "author": "NASA's Scientific Visualization Studio - Edgar Russell, David Leisawitz",
-  "lic": "Public domain",
-  "licurl": "",
-  "page": "https://commons.wikimedia.org/wiki/File:Horizon_to_full_Galaxy_(SVS127).webm",
-  "note": "tagliato da VIBRA"
- },
- {
   "id": "w255",
   "file": "v/w255.mp4",
   "by": "perche.mai",
@@ -3590,24 +3061,6 @@
   "lic": "Public domain",
   "licurl": "",
   "page": "https://commons.wikimedia.org/wiki/File:BlackHoleDiskFlareInGalaxyOJ287-animation-20200428.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w256",
-  "file": "v/w256.mp4",
-  "by": "perche.mai",
-  "tags": [
-   "spazio",
-   "vibra",
-   "giove",
-   "astronomia",
-   "nasa"
-  ],
-  "title": "Shoemaker-Levy 9 fragments collide with Jupiter — train of fragments view.webm",
-  "author": "NASA/Goddard Space Flight Center Scientific Visualization Studio",
-  "lic": "Public domain",
-  "licurl": "",
-  "page": "https://commons.wikimedia.org/wiki/File:Shoemaker-Levy_9_fragments_collide_with_Jupiter_%E2%80%94_train_of_fragments_view.webm",
   "note": "tagliato da VIBRA"
  },
  {
@@ -3729,38 +3182,6 @@
   "note": "tagliato da VIBRA"
  },
  {
-  "id": "w265",
-  "file": "v/w265.mp4",
-  "by": "passo.ritmo",
-  "tags": [
-   "slowmotion",
-   "vibra",
-   "rallentatore"
-  ],
-  "title": "Slow motion- drop.webm",
-  "author": "Christoph Pantel",
-  "lic": "CC BY 3.0",
-  "licurl": "https://creativecommons.org/licenses/by/3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Slow_motion-_drop.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w266",
-  "file": "v/w266.mp4",
-  "by": "perche.mai",
-  "tags": [
-   "slowmotion",
-   "vibra",
-   "rallentatore"
-  ],
-  "title": "Slowmotion water drop.webm",
-  "author": "Christoph Pantel",
-  "lic": "CC BY 3.0",
-  "licurl": "https://creativecommons.org/licenses/by/3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Slowmotion_water_drop.webm",
-  "note": "tagliato da VIBRA"
- },
- {
   "id": "w267",
   "file": "v/w267.mp4",
   "by": "pixel.tosto",
@@ -3790,22 +3211,6 @@
   "lic": "CC0",
   "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
   "page": "https://commons.wikimedia.org/wiki/File:Shutter_speed_01.ogv",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w271",
-  "file": "v/w271.mp4",
-  "by": "perche.mai",
-  "tags": [
-   "slowmotion",
-   "vibra",
-   "rallentatore"
-  ],
-  "title": "Shutter speed 04.ogv",
-  "author": "Mostafameraji",
-  "lic": "CC0",
-  "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-  "page": "https://commons.wikimedia.org/wiki/File:Shutter_speed_04.ogv",
   "note": "tagliato da VIBRA"
  },
  {
@@ -3857,39 +3262,6 @@
   "note": "tagliato da VIBRA"
  },
  {
-  "id": "w275",
-  "file": "v/w275.mp4",
-  "by": "passo.ritmo",
-  "tags": [
-   "slowmotion",
-   "vibra",
-   "rallentatore"
-  ],
-  "title": "Super Slo-Mo using a Samsung S21 Ultra (hummingbird, water splash, and more).webm",
-  "author": "Doug Von Gausig",
-  "lic": "CC BY 3.0",
-  "licurl": "https://creativecommons.org/licenses/by/3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Super_Slo-Mo_using_a_Samsung_S21_Ultra_(hummingbird,_water_splash,_and_more).webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w276",
-  "file": "v/w276.mp4",
-  "by": "pixel.tosto",
-  "tags": [
-   "sport",
-   "vibra",
-   "surf",
-   "movimento"
-  ],
-  "title": "Come funziona il foiling.webm",
-  "author": "Distribution Wissen SRF",
-  "lic": "CC BY-SA 4.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Come_funziona_il_foiling.webm",
-  "note": "tagliato da VIBRA"
- },
- {
   "id": "w277",
   "file": "v/w277.mp4",
   "by": "pixel.tosto",
@@ -3904,23 +3276,6 @@
   "lic": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Surfing_in_Tel_Aviv_MVI_3675.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w278",
-  "file": "v/w278.mp4",
-  "by": "pixel.tosto",
-  "tags": [
-   "sport",
-   "vibra",
-   "surf",
-   "movimento"
-  ],
-  "title": "Comment fonctionne un foil.webm",
-  "author": "Distribution Wissen SRF",
-  "lic": "CC BY-SA 4.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Comment_fonctionne_un_foil.webm",
   "note": "tagliato da VIBRA"
  },
  {
@@ -3975,23 +3330,6 @@
   "note": "tagliato da VIBRA"
  },
  {
-  "id": "w282",
-  "file": "v/w282.mp4",
-  "by": "motore.calmo",
-  "tags": [
-   "sport",
-   "vibra",
-   "sci",
-   "movimento"
-  ],
-  "title": "Erin Skis Snowshoe-49882561.webm",
-  "author": "Terry \"Tex\" Turner",
-  "lic": "CC BY-SA 3.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Erin_Skis_Snowshoe-49882561.webm",
-  "note": "tagliato da VIBRA"
- },
- {
   "id": "w283",
   "file": "v/w283.mp4",
   "by": "pixel.tosto",
@@ -4026,40 +3364,6 @@
   "note": "tagliato da VIBRA"
  },
  {
-  "id": "w285",
-  "file": "v/w285.mp4",
-  "by": "campetto.sotto.casa",
-  "tags": [
-   "sport",
-   "vibra",
-   "snowboard",
-   "movimento"
-  ],
-  "title": "Snowboard slalom.ogv",
-  "author": "Fanny Schertzer",
-  "lic": "CC BY 3.0",
-  "licurl": "https://creativecommons.org/licenses/by/3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Snowboard_slalom.ogv",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w286",
-  "file": "v/w286.mp4",
-  "by": "passo.ritmo",
-  "tags": [
-   "sport",
-   "vibra",
-   "snowboard",
-   "movimento"
-  ],
-  "title": "Video of snowboard glove with built-in plastic stabilizing element for wrist protection.webm",
-  "author": "Pittigrilli",
-  "lic": "CC BY-SA 4.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Video_of_snowboard_glove_with_built-in_plastic_stabilizing_element_for_wrist_protection.webm",
-  "note": "tagliato da VIBRA"
- },
- {
   "id": "w287",
   "file": "v/w287.mp4",
   "by": "motore.calmo",
@@ -4074,91 +3378,6 @@
   "lic": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Snowboarding-hakubagoryu-april2018.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w288",
-  "file": "v/w288.mp4",
-  "by": "passo.ritmo",
-  "tags": [
-   "sport",
-   "vibra",
-   "skate",
-   "movimento"
-  ],
-  "title": "Louis Sarowsky performing at Gowanus E-Waste recycling center.webm",
-  "author": "Wil540",
-  "lic": "CC BY-SA 4.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Louis_Sarowsky_performing_at_Gowanus_E-Waste_recycling_center.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w291",
-  "file": "v/w291.mp4",
-  "by": "campetto.sotto.casa",
-  "tags": [
-   "sport",
-   "vibra",
-   "skate",
-   "movimento"
-  ],
-  "title": "Day of the Town (2017-09-09) - Skateboarding - 0099.webm",
-  "author": "Zelio007",
-  "lic": "CC BY-SA 4.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Day_of_the_Town_(2017-09-09)_-_Skateboarding_-_0099.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w296",
-  "file": "v/w296.mp4",
-  "by": "campetto.sotto.casa",
-  "tags": [
-   "sport",
-   "vibra",
-   "ginnastica",
-   "movimento"
-  ],
-  "title": "Santé et Bien-être réalisé par Bouba Kam's.webm",
-  "author": "Bouba Kam's",
-  "lic": "CC BY-SA 4.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Sant%C3%A9_et_Bien-%C3%AAtre_r%C3%A9alis%C3%A9_par_Bouba_Kam%27s.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w300",
-  "file": "v/w300.mp4",
-  "by": "campetto.sotto.casa",
-  "tags": [
-   "sport",
-   "vibra",
-   "ciclismo",
-   "movimento"
-  ],
-  "title": "Zottegem - Grote Prijs Stad Zottegem, 19 augustus 2014 (C48A).ogv",
-  "author": "Jérémy-Günther-Heinz Jähnick",
-  "lic": "CC BY-SA 3.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Zottegem_-_Grote_Prijs_Stad_Zottegem,_19_augustus_2014_(C48A).ogv",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w301",
-  "file": "v/w301.mp4",
-  "by": "passo.ritmo",
-  "tags": [
-   "sport",
-   "vibra",
-   "ciclismo",
-   "movimento"
-  ],
-  "title": "Zottegem - Grote Prijs Stad Zottegem, 19 augustus 2014 (C54B).ogv",
-  "author": "Jérémy-Günther-Heinz Jähnick",
-  "lic": "CC BY-SA 3.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Zottegem_-_Grote_Prijs_Stad_Zottegem,_19_augustus_2014_(C54B).ogv",
   "note": "tagliato da VIBRA"
  },
  {
@@ -4298,23 +3517,6 @@
   "note": "tagliato da VIBRA"
  },
  {
-  "id": "w320",
-  "file": "v/w320.mp4",
-  "by": "passo.ritmo",
-  "tags": [
-   "sport",
-   "vibra",
-   "parapendio",
-   "movimento"
-  ],
-  "title": "Black's Beach.webm",
-  "author": "@PeterChenW",
-  "lic": "CC BY 4.0",
-  "licurl": "https://creativecommons.org/licenses/by/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Black%27s_Beach.webm",
-  "note": "tagliato da VIBRA"
- },
- {
   "id": "w321",
   "file": "v/w321.mp4",
   "by": "pixel.tosto",
@@ -4383,142 +3585,6 @@
   "note": "tagliato da VIBRA"
  },
  {
-  "id": "w325",
-  "file": "v/w325.mp4",
-  "by": "motore.calmo",
-  "tags": [
-   "sport",
-   "vibra",
-   "pallavolo",
-   "movimento"
-  ],
-  "title": "Volleyball.ogv",
-  "author": "Nsambaivan",
-  "lic": "CC BY-SA 4.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Volleyball.ogv",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w326",
-  "file": "v/w326.mp4",
-  "by": "pixel.tosto",
-  "tags": [
-   "sport",
-   "vibra",
-   "pallavolo",
-   "movimento"
-  ],
-  "title": "Beach volleyball in slow motion, 8 times slower.webm",
-  "author": "Alexis Jazz",
-  "lic": "CC BY 4.0",
-  "licurl": "https://creativecommons.org/licenses/by/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Beach_volleyball_in_slow_motion,_8_times_slower.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w328",
-  "file": "v/w328.mp4",
-  "by": "pixel.tosto",
-  "tags": [
-   "sport",
-   "vibra",
-   "pallavolo",
-   "movimento"
-  ],
-  "title": "Beach volleyball in Korea 2014.webm",
-  "author": "Hokyun Lee",
-  "lic": "CC BY 3.0",
-  "licurl": "https://creativecommons.org/licenses/by/3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Beach_volleyball_in_Korea_2014.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w329",
-  "file": "v/w329.mp4",
-  "by": "pixel.tosto",
-  "tags": [
-   "sport",
-   "vibra",
-   "corsa",
-   "movimento"
-  ],
-  "title": "Ulaanbaatar marathon 2026 12.webm",
-  "author": "Orgio89",
-  "lic": "CC BY-SA 4.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Ulaanbaatar_marathon_2026_12.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w330",
-  "file": "v/w330.mp4",
-  "by": "passo.ritmo",
-  "tags": [
-   "sport",
-   "vibra",
-   "corsa",
-   "movimento"
-  ],
-  "title": "Ulaanbaatar marathon 2026 13.webm",
-  "author": "Orgio89",
-  "lic": "CC BY-SA 4.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Ulaanbaatar_marathon_2026_13.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w331",
-  "file": "v/w331.mp4",
-  "by": "campetto.sotto.casa",
-  "tags": [
-   "sport",
-   "vibra",
-   "corsa",
-   "movimento"
-  ],
-  "title": "Ulaanbaatar marathon 2026 14.webm",
-  "author": "Orgio89",
-  "lic": "CC BY-SA 4.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Ulaanbaatar_marathon_2026_14.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w332",
-  "file": "v/w332.mp4",
-  "by": "passo.ritmo",
-  "tags": [
-   "sport",
-   "vibra",
-   "corsa",
-   "movimento"
-  ],
-  "title": "Ulaanbaatar marathon 2026 11.webm",
-  "author": "Orgio89",
-  "lic": "CC BY-SA 4.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Ulaanbaatar_marathon_2026_11.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w334",
-  "file": "v/w334.mp4",
-  "by": "pixel.tosto",
-  "tags": [
-   "sport",
-   "vibra",
-   "sub",
-   "movimento"
-  ],
-  "title": "Diving signal out of gas.ogv",
-  "author": "Sergey Dukachev & Alex Zelenin",
-  "lic": "CC BY-SA 3.0",
-  "licurl": "http://creativecommons.org/licenses/by-sa/3.0/",
-  "page": "https://commons.wikimedia.org/wiki/File:Diving_signal_out_of_gas.ogv",
-  "note": "tagliato da VIBRA"
- },
- {
   "id": "w337",
   "file": "v/w337.mp4",
   "by": "orto.in.tavola",
@@ -4550,23 +3616,6 @@
   "lic": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Rice_Cooking_on_a_gas_stove.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w340",
-  "file": "v/w340.mp4",
-  "by": "orto.in.tavola",
-  "tags": [
-   "cibo",
-   "vibra",
-   "ricette",
-   "cucina"
-  ],
-  "title": "Alioli.ogv",
-  "author": "Wardtmar",
-  "lic": "CC0",
-  "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-  "page": "https://commons.wikimedia.org/wiki/File:Alioli.ogv",
   "note": "tagliato da VIBRA"
  },
  {
@@ -4655,23 +3704,6 @@
   "note": "tagliato da VIBRA"
  },
  {
-  "id": "w350",
-  "file": "v/w350.mp4",
-  "by": "pentola.allegra",
-  "tags": [
-   "cibo",
-   "vibra",
-   "pane",
-   "cucina"
-  ],
-  "title": "Puerto del Rosario - Tefia - La Alcogida - bread baking (oT) 04.ogv",
-  "author": "Frank Vincentz",
-  "lic": "CC BY-SA 3.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Puerto_del_Rosario_-_Tefia_-_La_Alcogida_-_bread_baking_(oT)_04.ogv",
-  "note": "tagliato da VIBRA"
- },
- {
   "id": "w353",
   "file": "v/w353.mp4",
   "by": "orto.in.tavola",
@@ -4706,23 +3738,6 @@
   "note": "tagliato da VIBRA"
  },
  {
-  "id": "w355",
-  "file": "v/w355.mp4",
-  "by": "orto.in.tavola",
-  "tags": [
-   "cibo",
-   "vibra",
-   "cioccolato",
-   "cucina"
-  ],
-  "title": "Making Chocolate in Oaxaca.ogv",
-  "author": "nsaum75¡שיחת!‎",
-  "lic": "CC BY-SA 3.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Making_Chocolate_in_Oaxaca.ogv",
-  "note": "tagliato da VIBRA"
- },
- {
   "id": "w356",
   "file": "v/w356.mp4",
   "by": "risata.secca",
@@ -4737,23 +3752,6 @@
   "lic": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Smashing_a_chocolate_santa_claus.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w358",
-  "file": "v/w358.mp4",
-  "by": "risata.secca",
-  "tags": [
-   "cibo",
-   "vibra",
-   "caffè",
-   "cucina"
-  ],
-  "title": "A cup of Kenyan Coffee.webm",
-  "author": "Queen Asali",
-  "lic": "CC BY-SA 4.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:A_cup_of_Kenyan_Coffee.webm",
   "note": "tagliato da VIBRA"
  },
  {
@@ -5063,23 +4061,6 @@
   "note": "tagliato da VIBRA"
  },
  {
-  "id": "w394",
-  "file": "v/w394.mp4",
-  "by": "zaino.lento",
-  "tags": [
-   "città",
-   "vibra",
-   "roma",
-   "viaggi"
-  ],
-  "title": "Pantheon, Rome 123028.webm",
-  "author": "Quahadi",
-  "lic": "CC BY 4.0",
-  "licurl": "https://creativecommons.org/licenses/by/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Pantheon,_Rome_123028.webm",
-  "note": "tagliato da VIBRA"
- },
- {
   "id": "w395",
   "file": "v/w395.mp4",
   "by": "motore.calmo",
@@ -5094,23 +4075,6 @@
   "lic": "CC BY 2.0",
   "licurl": "https://creativecommons.org/licenses/by/2.0",
   "page": "https://commons.wikimedia.org/wiki/File:PCC_streetcar_near_Butler_station.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w396",
-  "file": "v/w396.mp4",
-  "by": "filo.verde",
-  "tags": [
-   "città",
-   "vibra",
-   "tram",
-   "viaggi"
-  ],
-  "title": "Starowislna trams.webm",
-  "author": "Stebanoid",
-  "lic": "CC BY-SA 4.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Starowislna_trams.webm",
   "note": "tagliato da VIBRA"
  },
  {
@@ -5182,40 +4146,6 @@
   "note": "tagliato da VIBRA"
  },
  {
-  "id": "w405",
-  "file": "v/w405.mp4",
-  "by": "pennello.ribelle",
-  "tags": [
-   "città",
-   "vibra",
-   "mercato",
-   "viaggi"
-  ],
-  "title": "2012-07-18 Market Street - San Francisco.ogv",
-  "author": "JanGerber",
-  "lic": "CC BY-SA 3.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:2012-07-18_Market_Street_-_San_Francisco.ogv",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w406",
-  "file": "v/w406.mp4",
-  "by": "filo.verde",
-  "tags": [
-   "città",
-   "vibra",
-   "mercato",
-   "viaggi"
-  ],
-  "title": "2012-07-18 Market Street - San Francisco.webm",
-  "author": "JanGerber",
-  "lic": "CC BY-SA 3.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:2012-07-18_Market_Street_-_San_Francisco.webm",
-  "note": "tagliato da VIBRA"
- },
- {
   "id": "w407",
   "file": "v/w407.mp4",
   "by": "filo.verde",
@@ -5247,23 +4177,6 @@
   "lic": "CC BY 4.0",
   "licurl": "https://creativecommons.org/licenses/by/4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Hamburger-fries-tokyo-japan-july31-2021.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w410",
-  "file": "v/w410.mp4",
-  "by": "pennello.ribelle",
-  "tags": [
-   "città",
-   "vibra",
-   "tokyo",
-   "viaggi"
-  ],
-  "title": "Bunkyo-tokyo-japan-hanami-april2015.ogv",
-  "author": "Nesnad",
-  "lic": "CC BY-SA 4.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Bunkyo-tokyo-japan-hanami-april2015.ogv",
   "note": "tagliato da VIBRA"
  },
  {
@@ -5451,22 +4364,6 @@
   "lic": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
   "page": "https://commons.wikimedia.org/wiki/File:2022-12-08,_212th_Way_SE_Bridge_over_the_Green_River_,_Auburn,_Washington,_video1.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w431",
-  "file": "v/w431.mp4",
-  "by": "pixel.tosto",
-  "tags": [
-   "drone",
-   "vibra",
-   "dallalto"
-  ],
-  "title": "Drone footage of the Space Telescope Science Institute Facility (SVS14218).webm",
-  "author": "NASA's Scientific Visualization Studio - KBR Wyle Services, LLC/Michael McClare, KBR Wyle Services, LLC/Chris Meaney, Advocates in Manpower Management",
-  "lic": "Public domain",
-  "licurl": "",
-  "page": "https://commons.wikimedia.org/wiki/File:Drone_footage_of_the_Space_Telescope_Science_Institute_Facility_(SVS14218).webm",
   "note": "tagliato da VIBRA"
  },
  {
@@ -5742,57 +4639,6 @@
   "note": "tagliato da VIBRA"
  },
  {
-  "id": "w453",
-  "file": "v/w453.mp4",
-  "by": "nota.storta",
-  "tags": [
-   "satisfying",
-   "vibra",
-   "ceramica",
-   "rilassante"
-  ],
-  "title": "Pottery on porters wheel.webm",
-  "author": "Alvin Ategyeka",
-  "lic": "CC BY-SA 4.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Pottery_on_porters_wheel.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w456",
-  "file": "v/w456.mp4",
-  "by": "nota.storta",
-  "tags": [
-   "satisfying",
-   "vibra",
-   "ceramica",
-   "rilassante"
-  ],
-  "title": "Making of Terracotta in Asharikandi Village, Dhubri, Assam.webm",
-  "author": "Nayan j Nath",
-  "lic": "CC BY-SA 4.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Making_of_Terracotta_in_Asharikandi_Village,_Dhubri,_Assam.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w459",
-  "file": "v/w459.mp4",
-  "by": "bit.chiaro",
-  "tags": [
-   "satisfying",
-   "vibra",
-   "vetro",
-   "rilassante"
-  ],
-  "title": "Light-melt-adhesive-based-on-dynamic-carbon-frameworks-in-a-columnar-liquid-crystal-phase-ncomms12094-s2.ogv",
-  "author": "Saito S, Nobusue S, Tsuzaka E, Yuan C, Mori C, Hara M, Seki T, Camacho C, Irle S, Yamaguchi S",
-  "lic": "CC BY 4.0",
-  "licurl": "https://creativecommons.org/licenses/by/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Light-melt-adhesive-based-on-dynamic-carbon-frameworks-in-a-columnar-liquid-crystal-phase-ncomms12094-s2.ogv",
-  "note": "tagliato da VIBRA"
- },
- {
   "id": "w462",
   "file": "v/w462.mp4",
   "by": "respiro.lento",
@@ -5878,23 +4724,6 @@
   "note": "tagliato da VIBRA"
  },
  {
-  "id": "w471",
-  "file": "v/w471.mp4",
-  "by": "bit.chiaro",
-  "tags": [
-   "satisfying",
-   "vibra",
-   "stampa",
-   "rilassante"
-  ],
-  "title": "Printing the Paper.webm",
-  "author": "Vanuatu Daily Post",
-  "lic": "CC BY 3.0",
-  "licurl": "https://creativecommons.org/licenses/by/3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Printing_the_Paper.webm",
-  "note": "tagliato da VIBRA"
- },
- {
   "id": "w473",
   "file": "v/w473.mp4",
   "by": "quaderno.zen",
@@ -5909,23 +4738,6 @@
   "lic": "CC BY 4.0",
   "licurl": "https://creativecommons.org/licenses/by/4.0",
   "page": "https://commons.wikimedia.org/wiki/File:3D_Printing_at_FIMS_Library.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w475",
-  "file": "v/w475.mp4",
-  "by": "respiro.lento",
-  "tags": [
-   "satisfying",
-   "vibra",
-   "stampa3d",
-   "rilassante"
-  ],
-  "title": "Timelapse of Bambu Lab X1 Carbon printing in ABS filament.webm",
-  "author": "Benlisquare",
-  "lic": "CC BY-SA 4.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Timelapse_of_Bambu_Lab_X1_Carbon_printing_in_ABS_filament.webm",
   "note": "tagliato da VIBRA"
  },
  {
@@ -5994,23 +4806,6 @@
   "lic": "Public domain",
   "licurl": "",
   "page": "https://commons.wikimedia.org/wiki/File:Origami-undersea.webm",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w482",
-  "file": "v/w482.mp4",
-  "by": "respiro.lento",
-  "tags": [
-   "satisfying",
-   "vibra",
-   "bolle",
-   "rilassante"
-  ],
-  "title": "Les Bulles de savon animées (1906).webm",
-  "author": "Georges Méliès",
-  "lic": "Public domain",
-  "licurl": "",
-  "page": "https://commons.wikimedia.org/wiki/File:Les_Bulles_de_savon_anim%C3%A9es_(1906).webm",
   "note": "tagliato da VIBRA"
  },
  {
@@ -6130,23 +4925,6 @@
   "lic": "CC BY-SA 3.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
   "page": "https://commons.wikimedia.org/wiki/File:Laser_Marking_on_Stainless_Steel.ogv",
-  "note": "tagliato da VIBRA"
- },
- {
-  "id": "w503",
-  "file": "v/w503.mp4",
-  "by": "nota.storta",
-  "tags": [
-   "satisfying",
-   "vibra",
-   "laser",
-   "rilassante"
-  ],
-  "title": "Lasercutting-video.ogv",
-  "author": "Akriesch",
-  "lic": "CC BY-SA 3.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Lasercutting-video.ogv",
   "note": "tagliato da VIBRA"
  },
  {
