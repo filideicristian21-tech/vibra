@@ -1,0 +1,13 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#12101A"><title>VIBRA · Guarda. Scorri. Vibra.</title>
+<meta name="description" content="VIBRA: app demo di video brevi con personaggi IA. Tutto resta sul tuo telefono.">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg"><link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css"></head><body>
+<div id="app">
+ <header id="top"><div class="logo">VIBRA</div><div class="feedtabs"><button data-f="seguiti">Seguiti</button><button data-f="perte" class="on">Per te</button></div><button id="sndBtn" aria-label="Audio">🔇</button></header>
+ <main id="view"></main>
+ <nav id="nav"><button data-t="home" class="on"><i>⌂</i><span>Home</span></button><button data-t="scopri"><i>⌕</i><span>Scopri</span></button><button data-t="crea" class="plus"><i>＋</i></button><button data-t="msg"><i>✉</i><span>Messaggi</span></button><button data-t="me"><i>☺</i><span>Profilo</span></button></nav>
+ <div id="sheet" class="sheet"></div><div id="modal" class="modal"></div><div id="toast"></div>
+</div>
+<script src="data.js"></script><script src="app.js"></script></body></html>
